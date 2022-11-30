@@ -40,8 +40,8 @@
                     <p class="subtitle"> Rs. {{product.price}} /-</p>
                 </div>
                 <div class="column">
-                    <a class="button is-primary">
-                        Buy
+                    <a class="button is-primary" href="{% url 'buy' product.id %}">
+                        Buy {{ product.id }}
                     </a>
                 </div>
             </div>
